@@ -1,0 +1,30 @@
+.content {
+  position: relative;
+  width: 90%;
+  margin-left: 70px;
+  margin-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cover-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-top: 10px;
+}
+
+.description {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* translucent dark background */
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+}

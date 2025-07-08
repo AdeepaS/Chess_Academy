@@ -1,0 +1,29 @@
+.card {
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.coach-details h1 {
+  font-size: 18px;
+  margin: 8px 0;
+  font-weight: 600;
+  color: #333;
+}

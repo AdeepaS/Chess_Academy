@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #763c09; /* Dark blue-gray */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-items a {
+  text-decoration: none; /* Removes underline */
+  color: inherit;        /* Keeps the text color same as surrounding */
+}
+
+.navbar-items h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  margin: 0;
+}
+
+.navbar-items h1:hover {
+  color: #cd8532; /* Tailwind's sky-400 blue */
+}
