@@ -1,0 +1,8 @@
+.quick-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem; /* ✅ Increase this from 2rem to 3rem or more */
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
