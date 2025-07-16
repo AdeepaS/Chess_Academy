@@ -11,9 +11,9 @@ const Buttons = ({ image, button_name, link }) => {
   };
 
   return (
-    <div className="course-card">
-      <img className="course-img" src={image} alt={button_name} />
-      <button className="course-btn" onClick={handleClick}>
+    <div className="card">
+      <img className="card-img" src={image} alt={button_name} />
+      <button className="card-btn" onClick={handleClick}>
         {button_name}
       </button>
     </div>

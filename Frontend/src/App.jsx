@@ -1,23 +1,7 @@
-/*import React from 'react'
-import NavBar from './components/NavBar/NavBar'
-import Header from './components/Header/Header'
 
-const App = () => {
-  return (
-    <>
-    <NavBar/>
-    <Header/>
-    </>
-  )
-}
-
-export default App
-*/
-
-// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import './App.css'
 import NavBar from './components/NavBar/NavBar';
 import Home from './Pages/Home/Home'
 import Coaches from './Pages/Coaches/Coaches'

@@ -1,13 +1,12 @@
 import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import Header from '../../components/Header/Header'
-import CourseButton from '../../components/CourseButton/CourseButton'
-import InstructorButton from '../../components/InstructorButton/InstructorButton'
 import './Home.css'
 import InstructorImg from '../../assets/Photos/instructor_image.avif'
 import CourseImg from '../../assets/Photos/course_image.jpg'
 import AchievementImg from '../../assets/Photos/achievement_image.jpeg'
 import Buttons from '../../components/Buttons/Buttons'
+import Footer from '../../components/Footer/Footer'
 
 
 const Home = () => {
@@ -28,7 +27,7 @@ const Home = () => {
         /> 
 
     </div>
-    
+    <Footer/>
     
     </>
   )
