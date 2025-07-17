@@ -5,13 +5,15 @@ import './CourseCard.css';
 const CourseCard = ({ title, instructor, schedule, level, mode, description }) => {
   return (
     <div className="course-card">
-      <h3>{title}</h3>
-      <h4>Instructor : {instructor}</h4>
-      <h4>{schedule}</h4>
-      <h4>Level : {level}</h4>
-      <h4>Mode : {mode}</h4>
-      <h4>{description}</h4>
-    </div>
+      <h1>{title}</h1>
+      <h3>Instructor : {instructor}</h3>
+      <h3>{schedule}</h3>
+      <h3>Level : {level}</h3>
+      <h3>Mode : {mode}</h3>
+      <h3>{description}</h3>
+      <button>Enroll now</button>
+    </div>  
+    
   );
 };
 
