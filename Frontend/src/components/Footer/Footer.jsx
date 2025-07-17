@@ -14,8 +14,8 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>Contact Us</h4>
-          <p><FaPhoneAlt /> <a href="tel:+94112223344">+94 112 223 344</a></p>
-          <p><FaWhatsapp /> <a href="https://wa.me/94771234567" target="_blank" rel="noopener noreferrer">+94 77 123 4567</a></p>
+          <p><FaPhoneAlt /> <a href="tel:+94112223344">+94 77 114 7533</a></p>
+          <p><FaWhatsapp /> <a href="https://wa.me/94771234567" target="_blank" rel="noopener noreferrer">+94 77 114 7533</a></p>
           <p><FaEnvelope /> <a href="mailto:info@nobelchess.lk">info@nobelchess.lk</a></p>
         </div>
 

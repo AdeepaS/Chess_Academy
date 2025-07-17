@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import CoachCard from '../../components/CoachCard/CoachCard';
 import './Coaches.css'
 
+
 const Coaches = () => {
   const [coaches, setCoaches] = useState([]);
 
@@ -13,6 +14,7 @@ const Coaches = () => {
   }, []);
 
   return (
+    
     <div className="coaches-container">
       {coaches.map((coach) => (
         <CoachCard
@@ -22,8 +24,9 @@ const Coaches = () => {
           rating={coach.rating}
         />
       ))}
-    </div>
-
+    </div> 
+    
+     
   );
 };
 
