@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const coachRoutes = require('./routes/coachRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/coaches', coachRoutes);
+app.use('/api/users', userRoutes);
 
 // Connect to MongoDB and start server
 mongoose
@@ -23,3 +25,5 @@ mongoose
     });
   })
   .catch((error) => console.log('MongoDB Error:', error));
+
+
