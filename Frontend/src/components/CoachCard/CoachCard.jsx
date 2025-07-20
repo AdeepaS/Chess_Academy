@@ -1,12 +1,11 @@
 import React from 'react'
-import Pradeep from '../../assets/Photos/chess_logo.jpg'
 import './CoachCard.css'
 
-const CoachCard = ({ name, age, rating}) => {
+const CoachCard = ({ name, age, rating, photo}) => {
   return (
     <div className="card">
         <div className="image">
-            <img src={Pradeep} alt="coach_img" />
+            <img src={photo} alt="coach_img" />
         </div>
         <div className="coach-details">
             <h1>{name}</h1>

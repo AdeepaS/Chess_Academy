@@ -1,0 +1,33 @@
+.signup-container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form button {
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.signup-form button {
+  background-color: #4a2c18;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}

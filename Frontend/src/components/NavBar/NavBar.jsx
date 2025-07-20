@@ -39,7 +39,7 @@ const NavBar = () => {
         <Link to="/courses"><h1>Courses</h1></Link>
         <Link to="/coaches"><h1>Coaches</h1></Link>
         <h1>Achievements</h1> {/* You can link this later */}
-        <h1>About Us</h1>     {/* You can link this later */}
+        <Link to="/signup"><h1>Register</h1></Link>     
       </div>
     </div>
   );
