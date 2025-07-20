@@ -52,7 +52,7 @@ const SignUp = () => {
 
   return (
     <div className="signup-container">
-      <h2>Join the Chess Academy</h2>
+      <h2>Join our Academy!</h2>
       <form onSubmit={handleSubmit} className="signup-form">
         <input
           type="text"
@@ -137,7 +137,7 @@ const SignUp = () => {
 
         {errors && <p className="error">{errors}</p>}
 
-        <button type="submit">Sign Up</button>
+        <button type="submit">Create Account</button>
       </form>
     </div>
   );
