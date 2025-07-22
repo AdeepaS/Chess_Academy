@@ -30,10 +30,11 @@ const AppContent = () => {
 
   // Define routes that should NOT show the NavBar
   const hideNavRoutes = ['/signup'];
-
+ //!hideNavRoutes.includes(location.pathname) && //
   return (
     <>
-      {!hideNavRoutes.includes(location.pathname) && <NavBar />}
+      
+      {<NavBar />}  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/coaches" element={<Coaches />} />
