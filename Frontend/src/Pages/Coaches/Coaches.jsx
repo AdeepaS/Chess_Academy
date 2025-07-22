@@ -15,7 +15,7 @@ const imageMap = {
 
 const Coaches = () => {
   const [coaches, setCoaches] = useState([]);
-
+//http://localhost:5000/api/coaches//
   useEffect(() => {
     fetch('http://localhost:5000/api/coaches')
       .then((res) => res.json())

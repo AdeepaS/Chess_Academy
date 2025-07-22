@@ -27,9 +27,9 @@ export default function SignupCard() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-
+//api/users/signup
     try {
-      const response = await fetch("/api/users/signup", {
+      const response = await fetch('http://localhost:5000/api/users/signup', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
