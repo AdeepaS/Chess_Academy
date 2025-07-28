@@ -6,7 +6,7 @@ export default function SignupPage() {
     <div className="signup-page">
       <div className="signup-container">
         <div className="header-section">
-          <h1 className="academy-title">Chess Academy</h1>
+          <h1 className="academy-title">Nobel Worriors Chess Academy</h1>
           <p className="academy-subtitle">Join our community of chess enthusiasts</p>
         </div>
         <SignupCard />

@@ -7,13 +7,13 @@ const router = express.Router();
 // POST /api/auth/signup
 router.post('/signup', async (req, res) => {
   try {
-    const { name, email, password, fideRating, fideId, contactNo } = req.body;
+    const { username, email, password, fideRating, fideId, contactNo } = req.body;
 
     // Additional server-side validation
-    if (!name || !email || !password || !contactNo) {
+    if (!username || !email || !password || !contactNo) {
       return res.status(400).json({ 
         success: false,
-        message: 'Name, email, password, and contact number are required' 
+        message: 'username, email, password, and contact number are required' 
       });
     }
 
@@ -56,7 +56,7 @@ router.post('/signup', async (req, res) => {
 
     // Create new user
     const newUser = new User({
-      name: name.trim(),
+      username: username.trim(),
       email: email.toLowerCase().trim(),
       password: hashedPassword,
       contactNo: contactNo.trim(),

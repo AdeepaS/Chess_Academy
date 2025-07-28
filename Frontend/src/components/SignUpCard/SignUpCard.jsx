@@ -5,7 +5,7 @@ import './SignUpCard.css'
 
 export default function SignupCard() {
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
     password: "",
     fideRating: "",
@@ -43,7 +43,7 @@ export default function SignupCard() {
         // Reset form or redirect user
         alert("Registration successful!")
         setFormData({
-          name: "",
+          username: "",
           email: "",
           password: "",
           fideRating: "",
@@ -72,17 +72,17 @@ export default function SignupCard() {
 
       <form className="signup-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name" className="form-label">
-            Full Name <span className="required">*</span>
+          <label htmlFor="username" className="form-label">
+            User Name <span className="required">*</span>
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="username"
+            name="username"
+            value={formData.username}
             onChange={handleInputChange}
             className="form-input"
-            placeholder="Enter your full name"
+            placeholder="Enter a user name"
             required
           />
         </div>

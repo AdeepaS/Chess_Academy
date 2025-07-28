@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-  name: {
+  username: {
     type: String,
-    required: [true, 'Name is required'],
+    required: [true, 'username is required'],
     trim: true,
-    maxlength: [100, 'Name cannot exceed 100 characters'],
-    minlength: [2, 'Name must be at least 2 characters long']
+    maxlength: [100, 'username cannot exceed 100 characters'],
+    minlength: [2, 'username must be at least 2 characters long']
   },
   email: {
     type: String,
@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Contact number is required'],
     trim: true,
-    match: [/^[\+]?[1-9][\d]{0,15}$/, 'Please enter a valid contact number']
+    match: [/^0\d{9}$/, 'Contact number must start with 0 and be exactly 10 digits']
   },
   fideRating: {
     type: Number,
@@ -37,7 +37,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     trim: true,
     default: null,
-    match: [/^\d{8,10}$/, 'FIDE ID must be 8-10 digits']
+    match: [/^\d{7}$/, 'Fide Id must be exactly 7 digits']
   },
   isActive: {
     type: Boolean,
