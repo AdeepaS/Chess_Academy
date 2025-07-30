@@ -108,6 +108,25 @@ router.post('/signup', async (req, res) => {
     });
   }
 });
+// userRoutes.js
+
+// Get all users at '/api/users'
+router.get('/', async (req, res) => {
+  try {
+    const users = await User.find({}, '-password'); // exclude password
+    res.json({
+      success: true,
+      data: users
+    });
+  } catch (err) {
+    console.error('Error fetching users:', err);
+    res.status(500).json({
+      success: false,
+      message: 'Error fetching users'
+    });
+  }
+});
+
 
 // GET /api/auth/check-email/:email (optional - to check if email exists)
 router.get('/check-email/:email', async (req, res) => {
