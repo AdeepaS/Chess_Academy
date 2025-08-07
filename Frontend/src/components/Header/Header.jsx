@@ -1,5 +1,5 @@
 import React from 'react'
-import Cover_Photo from '../../assets/Photos/cover_photo.webp'
+import Cover_Photo from '../../assets/Photos/new.jpg'
 import './Header.css'
 
 const Header = () => {

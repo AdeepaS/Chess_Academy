@@ -1,8 +1,27 @@
-.quick-buttons {
+/*.quick-buttons {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 3rem; /* ✅ Increase this from 2rem to 3rem or more */
+  gap: 3rem; 
   margin-top: 2rem;
   flex-wrap: wrap;
+}
+*/
+
+/* Home.css */
+
+.quick-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: #f0f6ff; /* very light blue */
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .quick-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }

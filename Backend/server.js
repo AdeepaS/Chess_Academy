@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const coachRoutes = require('./routes/coachRoutes');
 const userRoutes = require('./routes/userRoutes');
+const authRoutes = require('./routes/auth');
 
 dotenv.config();
 
@@ -14,7 +15,7 @@ app.use(express.json());
 // Routes
 app.use('/api/coaches', coachRoutes);
 app.use('/api/users', userRoutes);
-
+app.use('/api/users', authRoutes);
 
 // Health check route (optional)
 app.get('/api/health', (req, res) => {

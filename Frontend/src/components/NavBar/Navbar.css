@@ -1,39 +1,71 @@
+/* Navbar.css */
+
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 10px;
-  background-color: #763c09; /* Dark blue-gray */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: #e6f0ff; /* very light blue background */
+  box-shadow: 0 2px 4px rgba(0, 0, 50, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
-.logo img {
-  height: 100px;
-  width: auto;
-  cursor: pointer;
-}
-
-.navbar-items {
+/* Left side: logo + nav links */
+.nav-left {
   display: flex;
-  gap: 25px;
+  align-items: center;
 }
 
-.navbar-items a {
-  text-decoration: none; /* Removes underline */
-  color: inherit;        /* Keeps the text color same as surrounding */
+/* Logo */
+.logo img {
+  height: 48px;
+  width: auto;
+  border-radius: 8px;
+  background-color: #f8f4ec; /* soft creamy background to suit bronzy tone */
+  padding: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-items h1 {
-  color: rgb(0, 0, 0);
+/* Nav links (Home, Courses, Coaches) */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.nav-links h1 {
+  font-size: 1.1rem;
   font-weight: 600;
-  font-size: 20px;
+  color: #003366; /* dark modern blue */
+  transition: color 0.3s ease;
   cursor: pointer;
-  transition: color 0.5s ease;
-  margin: 0;
 }
 
-.navbar-items h1:hover {
-  color: #cd8532; /* Tailwind's sky-400 blue */
+.nav-links h1:hover {
+  color: #0056b3; /* brighter blue on hover */
+}
+
+/* Right side: login/register */
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-right h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #004080;
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-right h1:hover {
+  color: #0070f3;
+  transform: scale(1.05);
+}
+
+/* Optional: active link styling (if using NavLink) */
+.active-link h1 {
+  color: #007bff;
+  text-decoration: underline;
 }

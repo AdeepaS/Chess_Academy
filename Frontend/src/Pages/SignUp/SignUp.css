@@ -1,4 +1,4 @@
-.signup-page {
+/*.signup-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #8b4513 0%, #a0522d 50%, #cd853f 100%);
   display: flex;
@@ -47,6 +47,73 @@
   bottom: 0;
   opacity: 0.1;
   background-image: repeating-conic-gradient(#654321 0% 25%, transparent 0% 50%);
+  background-size: 60px 60px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .academy-title {
+    font-size: 2.5rem;
+  }
+
+  .academy-subtitle {
+    font-size: 1rem;
+  }
+
+  .signup-page {
+    padding: 10px;
+  }
+}
+*/
+.signup-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a3cef1 0%, #6ca0dc 50%, #3b82f6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.academy-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e0f2fe; /* very light blue */
+  text-shadow: 2px 2px 4px rgba(0, 0, 50, 0.5);
+  margin: 0;
+  font-family: "Georgia", serif;
+}
+
+.academy-subtitle {
+  font-size: 1.2rem;
+  color: #bae6fd; /* light blue */
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+}
+
+.chess-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  background-image: repeating-conic-gradient(#4a90e2 0% 25%, transparent 0% 50%);
   background-size: 60px 60px;
   z-index: 1;
 }
