@@ -43,10 +43,10 @@ router.post('/signup', async (req, res) => {
     }
 
     // Validate FIDE ID if provided
-    if (fideId && !/^\d{8,10}$/.test(fideId)) {
+    if (fideId && !/^\d{7,8}$/.test(fideId)) {
       return res.status(400).json({ 
         success: false,
-        message: 'FIDE ID must be 8-10 digits' 
+        message: 'FIDE ID must be 7 or 8 digits' 
       });
     }
 

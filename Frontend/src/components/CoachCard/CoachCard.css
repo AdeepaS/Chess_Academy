@@ -1,29 +1,128 @@
+/*
+
 .card {
-  width: 300px;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
   border: 2px solid #ddd;
   border-radius: 12px;
-  padding: 16px;
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  margin: 10px auto;
   transition: transform 0.2s ease-in-out;
+  padding: 16px;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
-.image img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+
+.image-section {
+  flex: 0 0 30%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: 200px; 
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.age-rating {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.age-rating h3 {
+  font-size: 16px;
+  margin: 4px 0;
+  font-weight: 500;
+  color: #555;
+}
+
+
+.description-section {
+  flex: 1; 
+  padding-left: 20px;
+}
+
+.description-section h1 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.description-section p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+*/
+/* CoachCard.css */
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.image-section {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
   object-fit: cover;
   margin-bottom: 12px;
 }
 
-.coach-details h1 {
-  font-size: 18px;
-  margin: 8px 0;
-  font-weight: 600;
-  color: #333;
+.age-rating {
+  width: 100%;
+  text-align: center;
+}
+
+.age-rating h3 {
+  margin: 5px 0;
+  font-weight: 500;
+  color: #444;
+}
+
+.description-section {
+  flex-basis: 66.66%;
+  padding-left: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-section h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.description-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
 }

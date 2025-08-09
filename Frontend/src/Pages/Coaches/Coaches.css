@@ -1,11 +1,22 @@
 /* Coaches.css */
-
+/*
 .coaches-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;          /* space between cards */
+  gap: 20px;         
   justify-content: center;
   padding: 20px;
-  background-color: #f9f9f9; /* light background */
+  background-color: #f9f9f9; 
+  min-height: 80vh;
+}
+*/
+
+.coaches-container {
+  display: flex;
+  flex-direction: column; /* one card under the other */
+  align-items: center; /* center cards horizontally */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
   min-height: 80vh;
 }

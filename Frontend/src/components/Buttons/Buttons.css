@@ -47,7 +47,7 @@
 
 
 */
-.card {
+.button-card {
   width: 300px;
   height: 380px;
   background-color: white;
@@ -64,19 +64,19 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.button-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3); /* stronger sky-blue shadow */
 }
 
-.card-img {
+.button-card-img {
   width: 100%;
   height: 260px;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
 
-.card-btn {
+.button-card-btn {
   width: 100%;
   padding: 0.75rem;
   background-color: #3b82f6; /* blue-500 */
@@ -89,6 +89,6 @@
   transition: background-color 0.3s ease;
 }
 
-.card-btn:hover {
+.button-card-btn:hover {
   background-color: #2563eb; /* blue-600 */
 }
