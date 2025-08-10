@@ -7,6 +7,7 @@ import Coaches from './Pages/Coaches/Coaches';
 import Courses from './Pages/Courses/Courses';
 import SignUp from './Pages/SignUp/SIgnUp';
 import Login from './Pages/Login/Login'; // ← Assuming you have this
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 const AppContent = () => {
   const location = useLocation();
@@ -26,6 +27,8 @@ const AppContent = () => {
         <Route path="/courses" element={<Courses />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} /> {/* ← Add Login route */}
+        <Route path="/dashboard" element={<Dashboard />} />
+
       </Routes>
     </>
   );

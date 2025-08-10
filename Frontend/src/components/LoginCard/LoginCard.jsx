@@ -1,9 +1,14 @@
 "use client";
 
+
 import { useState } from "react";
 import './LoginCard.css';
+import { useNavigate } from "react-router-dom";
 
 export default function LoginCard() {
+
+  const navigate = useNavigate();
+  
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -33,8 +38,10 @@ export default function LoginCard() {
 
       if (response.ok) {
         const result = await response.json();
+        localStorage.setItem("token", result.token);
         console.log("Login successful:", result);
         alert("Login successful!");
+        navigate("/dashboard");
         // redirect or reset form here if needed
       } else {
         const error = await response.json();
