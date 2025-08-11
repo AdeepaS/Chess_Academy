@@ -1,30 +1,60 @@
-/* Header.css */
-
 .content {
+  width: 100vw; /* full width */
+  height: 75vh; /* 75% of viewport height */
+  padding: 2rem 3rem; /* some padding */
+  background: white; /* keep theme */
+  color: #6b4f27;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 2rem;
+}
+
+/* Left side container holding description and buttons */
+.description {
+  width: 45%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  height: 95%;
+}
+
+/* Title at the top */
+.description h1 {
+  font-size: 5rem;
+  margin: 0 0 2rem 0;
+  font-weight: 700;
+}
+
+.description p{
+  font-size: 1.8rem;
+}
+/* Buttons container: place buttons horizontally below the title */
+.buttons-container {
+  margin-top: 50px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
   align-items: center;
-  padding: 3rem 1rem;
-  background: #f4faff; /* very light blue background */
-  color: #003366; /* deep modern blue text */
+  /* Keep button sizes as they are in Buttons component */
+}
+
+/* Right side image container */
+.image {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .cover-img {
   width: 100%;
-  max-height: 400px;
+  height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 51, 102, 0.2);
-  margin-bottom: 2rem;
-}
-
-.description {
-  max-width: 900px;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  text-align: center;
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 51, 102, 0.1);
+  box-shadow: 0 4px 10px rgba(139, 94, 52, 0.2);
 }

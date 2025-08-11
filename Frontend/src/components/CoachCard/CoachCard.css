@@ -71,10 +71,10 @@
   max-width: 600px;
   margin: 20px 0;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #d2b48c; /* light brown border */
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(181, 141, 82, 0.3); /* soft brown shadow */
+  background-color: #fff8dc; /* light yellow background (cornsilk) */
   box-sizing: border-box;
 }
 
@@ -93,6 +93,7 @@
   border-radius: 6px;
   object-fit: cover;
   margin-bottom: 12px;
+  border: 2px solid #deb887; /* light brown border around image */
 }
 
 .age-rating {
@@ -103,7 +104,7 @@
 .age-rating h3 {
   margin: 5px 0;
   font-weight: 500;
-  color: #444;
+  color: #8b5e00; /* dark golden brown */
 }
 
 .description-section {
@@ -118,11 +119,11 @@
 .description-section h1 {
   margin: 0 0 10px 0;
   font-size: 1.8rem;
-  color: #222;
+  color: #b8860b; /* dark goldenrod */
 }
 
 .description-section p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #555;
+  color: #6b4c00; /* dark brownish yellow */
 }

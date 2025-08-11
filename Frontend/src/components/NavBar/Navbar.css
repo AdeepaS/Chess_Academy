@@ -1,12 +1,11 @@
-/* Navbar.css */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 2rem;
-  background-color: #e6f0ff; /* very light blue background */
-  box-shadow: 0 2px 4px rgba(0, 0, 50, 0.1);
+  background-color: white; /* warm pale yellow background */
+  box-shadow: 0 2px 4px rgba(100, 70, 20, 0.15);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -18,11 +17,11 @@
 
 /* Logo */
 .logo img {
-  height: 48px;
+  height: 75px;
   width: auto;
   border-radius: 8px;
-  background-color: #f8f4ec; /* soft creamy background to suit bronzy tone */
-  padding: 4px;
+  background-color: #fbe7c6; /* soft creamy beige */
+  padding: 2px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,18 +30,19 @@
   display: flex;
   gap: 1.5rem;
   margin-left: 1.5rem;
+
 }
 
 .nav-links h1 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: #003366; /* dark modern blue */
+  color: #ad8213; /* warm brown */
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .nav-links h1:hover {
-  color: #0056b3; /* brighter blue on hover */
+  color: #f8b51b; /* golden brown on hover */
 }
 
 /* Right side: login/register */
@@ -51,21 +51,28 @@
   gap: 1.5rem;
 }
 
-.nav-right h1 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #004080;
-  transition: color 0.3s ease, transform 0.2s ease;
-  cursor: pointer;
-}
 
-.nav-right h1:hover {
-  color: #0070f3;
+.nav-right-button{
+  width: 100px;
+  height: 40px;
+  padding: 0.75rem;
+  background-color: #ac8326; 
+  color: rgb(239, 237, 222);
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.4rem 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.nav-right-button:hover {
+  color: #f8b51b; /* warm gold */
+  background-color: #fbe7c6;
   transform: scale(1.05);
 }
 
 /* Optional: active link styling (if using NavLink) */
 .active-link h1 {
-  color: #007bff;
+  color: #d4a437; /* gold highlight for active link */
   text-decoration: underline;
 }

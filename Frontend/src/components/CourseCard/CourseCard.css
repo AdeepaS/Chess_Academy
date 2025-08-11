@@ -46,18 +46,17 @@
 }  
   
 */
-
 .course-card {
   background-color: #ffffff;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15); /* soft blue shadow */
+  box-shadow: 0 4px 12px rgba(139, 94, 52, 0.15); /* soft brown shadow */
   padding: 1.5rem 2rem;
   max-width: 350px;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  color: #1e3a8a; /* dark blue text */
+  color: #6b4f27; /* deep brown text */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -65,19 +64,19 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #2563eb; /* blue-600 */
+  color: #d4a437; /* golden yellow */
 }
 
 .course-card h3 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
-  color: #1e40af; /* blue-800 */
+  color: #8b5e34; /* rich brown */
 }
 
 .course-card button {
   margin-top: 1rem;
-  background-color: #3b82f6; /* blue-500 */
+  background-color: #f4c542; /* warm gold */
   color: white;
   border: none;
   border-radius: 0.6rem;
@@ -89,5 +88,5 @@
 }
 
 .course-card button:hover {
-  background-color: #2563eb; /* blue-600 */
+  background-color: #b5893d; /* darker gold/brown */
 }

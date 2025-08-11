@@ -1,6 +1,6 @@
 .footer {
-  background-color: #1e3a8a; /* dark blue-900 */
-  color: #f1f5f9; /* light slate-100 */
+  background-color: #6b4f27; /* deep warm brown */
+  color: #fff8e1; /* pale yellow text */
   padding: 2rem 1rem 1rem;
   font-family: 'Segoe UI', sans-serif;
   margin-top: 30px;
@@ -16,33 +16,33 @@
 .footer-section h3,
 .footer-section h4 {
   margin-bottom: 0.5rem;
-  color: #93c5fd; /* light blue-300 */
+  color: #ffd966; /* golden yellow */
 }
 
 .footer-section p {
   margin: 0.4rem 0;
   font-size: 0.95rem;
-  color: #dbeafe; /* light blue-200 */
+  color: #fce8b2; /* soft cream yellow */
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
 .footer-section a {
-  color: #bfdbfe; /* blue-200 */
+  color: #f4c542; /* warm gold */
   text-decoration: none;
 }
 
 .footer-section a:hover {
   text-decoration: underline;
-  color: #60a5fa; /* sky-400 */
+  color: #d4a437; /* darker gold */
 }
 
 .footer-bottom {
   margin-top: 2rem;
   text-align: center;
-  border-top: 1px solid #3b82f6; /* blue-500 */
+  border-top: 1px solid #d4a437; /* gold border */
   padding-top: 1rem;
   font-size: 0.85rem;
-  color: #93c5fd; /* blue-300 */
+  color: #ffd966; /* golden yellow */
 }

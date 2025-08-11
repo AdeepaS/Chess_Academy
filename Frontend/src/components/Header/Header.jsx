@@ -1,14 +1,22 @@
 import React from 'react'
-import Cover_Photo from '../../assets/Photos/new.jpg'
+import Cover_Photo from '../../assets/Photos/chess_cover.jpeg';
 import './Header.css'
+import Buttons from '../Buttons/Buttons';
 
 const Header = () => {
   return (
     <div className="content">
+      <div className="description">
+        <h1>Nobel Worriors Chess Academy</h1>
+        <p>Explore our experienced coaches and the suitable courses for you!</p>
+      <div className="buttons-container">
+        <Buttons button_name="Explore Our Courses" link='/courses' />
+        <Buttons button_name="Meet Our Coaches" link='/coaches' />
+      </div>
+      </div>
+      <div className="image">
       <img className="cover-img" src={Cover_Photo} alt="cover_img" />
-      <p className="description">
-        Nobel Warriors Chess Academy is a premier chess training center dedicated to nurturing strategic thinking, discipline, and competitive spirit among players of all ages and skill levels. Our academy combines expert coaching, modern training techniques, and a supportive community to help each student unlock their full potential on the chessboard. Whether you’re a beginner eager to learn the fundamentals or an advanced player aiming to compete at higher levels, Nobel Warriors provides personalized guidance and a dynamic learning environment to elevate your game. Join us to develop your skills, sharpen your tactics, and become a true warrior in the world of chess!
-      </p>
+      </div>
     </div>
   )
 }
