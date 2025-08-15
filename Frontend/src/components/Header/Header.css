@@ -1,8 +1,8 @@
-.content {
-  width: 100vw; /* full width */
-  height: 75vh; /* 75% of viewport height */
-  padding: 2rem 3rem; /* some padding */
-  background: white; /* keep theme */
+/*.content {
+  width: 100vw; 
+  height: 75vh; 
+  padding: 2rem 3rem; 
+  background: rgb(245, 234, 211); 
   color: #6b4f27;
   display: flex;
   flex-direction: row;
@@ -11,16 +11,17 @@
   gap: 2rem;
 }
 
-/* Left side container holding description and buttons */
+
 .description {
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 95%;
+
 }
 
-/* Title at the top */
+
 .description h1 {
   font-size: 5rem;
   margin: 0 0 2rem 0;
@@ -30,7 +31,7 @@
 .description p{
   font-size: 1.8rem;
 }
-/* Buttons container: place buttons horizontally below the title */
+
 .buttons-container {
   margin-top: 50px;
   margin-left: 30px;
@@ -38,17 +39,18 @@
   flex-direction: row;
   gap: 5rem;
   align-items: center;
-  /* Keep button sizes as they are in Buttons component */
+  
 }
 
-/* Right side image container */
+
 .image {
   width: 55%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 0px;
+  margin: 0 0;
 }
 
 .cover-img {
@@ -57,4 +59,55 @@
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(139, 94, 52, 0.2);
+}
+*/
+
+.content {
+  width: 98%;
+  margin: auto;
+  height: 75vh;
+  padding: 2rem 3rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Make text white for contrast */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Dark overlay for better text visibility */
+/*.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 0;
+}
+*/
+.description {
+  position: relative; /* So it appears above overlay */
+  z-index: 1;
+  max-width: 800px;
+}
+
+/* Title styling */
+.description h1 {
+  font-size: 5rem;
+  margin: 0 0 2rem 0;
+  font-weight: 700;
+}
+
+.description p {
+  font-size: 1.8rem;
+}
+
+/* Buttons row */
+.buttons-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: center;
 }

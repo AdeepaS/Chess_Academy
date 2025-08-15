@@ -8,13 +8,14 @@ import AchievementImg from '../../assets/Photos/achievement_image.jpeg'
 import Buttons from '../../components/Buttons/Buttons'
 import Footer from '../../components/Footer/Footer'
 import About from '../../components/About/About'
+import Achievement from '../../components/Achievement/Achievement'
 
 const Home = () => {
   return (
     <>
     <Header/>
+    <Achievement/>
     <About/>
-    
     <Footer/>
     
     </>

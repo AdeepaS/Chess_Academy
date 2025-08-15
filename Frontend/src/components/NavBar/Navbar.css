@@ -39,10 +39,13 @@
   color: #ad8213; /* warm brown */
   transition: color 0.3s ease;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #ac8326;
 }
 
 .nav-links h1:hover {
   color: #f8b51b; /* golden brown on hover */
+  text-decoration-color: #f8b51b;
 }
 
 /* Right side: login/register */
